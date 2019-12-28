@@ -1,0 +1,9 @@
+<h1><%= t('widget_header') %></h1>
+
+<h2><%= t('widget_title') %></h2>
+<div class="challenge_box">
+  <%= label_tag 'terms_checkbox' do %>
+    <%= t('terms_checkbox_html', cronuts_href: link_to(t('cronuts'),cronuts_url), donuts_href: link_to(t('donuts'), donuts_url)) %>
+  <% end %>
+  <%= check_box_tag 'terms_checkbox' %>
+</div>
